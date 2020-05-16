@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+        <!-- Satrt to write html correctly --!>
+    <html>
+      <head>
+          <title>          Current soundcloud          </title>
+      <style>      <!-- Define the style of table --!>
+      table { border-collapse: collapse; }
+      td { border: 1px solid black; }
+      td:nth-child(1){ width:50px; }
+      td:nth-child(1){ text-align:center; }
+      td:nth-child(2){ width:200px; }
+      td:nth-child(3){ width:150px; }
+      th { text-align:left; }
+      </style>
+      </head>
+      <body>
+      <!-- Put image on centre --!>
+      <center><img src="http://icons.iconarchive.com/icons/designbolts/ios8-style-social/512/Soundcloud-icon.png"
+       	  alt="music Icon" width=40% ></center>
+      <h2 align='center'>          Rankig of soundcloud          </h2>
+      
+      <!-- Display current date and month --!>
+        <p align='center'><span id="date"></span></p>
+      <script>
+	    var dt = new Date();
+	    document.getElementById("date").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2));
+      </script>
+      <table border="1"  align='center'>
+          <tr bgcolor="gray"> <!-- Make the first row of table with gray background colour --!>
+           <th>Rank</th>
+           <th id="valign1">Song title</th>
+           <th id="valign2">Singer</th>
+          </tr>
+           <tr><td>1</td><td>풍경 by V of BTS</td><td>BTS</td></tr>
+       <tr><td>2</td><td>약속 By JIMIN Of BTS</td><td>BTS</td></tr>
+       <tr><td>3</td><td>أغنية أنا مافيا - محمد رمضان - النسخة الأصلية | Ana Mafia song - Mohamed Ramdan</td><td>Mohamed Ramadan</td></tr>
+       <tr><td>4</td><td>Swervin feat. 6ix9ine</td><td>A BOOGIE WIT DA HOODIE</td></tr>
+       <tr><td>5</td><td>이런 엔딩 by JK of BTS</td><td>BTS</td></tr>
+       <tr><td>6</td><td>Drip Too Hard</td><td>Lil Baby</td></tr>
+       <tr><td>7</td><td>Envy Me</td><td>Calboy</td></tr>
+       <tr><td>8</td><td>Leave Me Alone (Prod. by Young Forever x Cast Beats)</td><td>Flipp Dinero</td></tr>
+       <tr><td>9</td><td>YNW MELLY - MURDER ON MY MIND Prod By; SMKEXCLSV</td><td>Ynw Melly</td></tr>
+       <tr><td>10</td><td>sheck wes - mo bamba (prod. 16yrold &amp; take a daytrip)</td><td>16yrold</td></tr>
+      </table>
+                 <p align='center'><a href="https://soundcloud.com/charts/top" >https://soundcloud.com/charts/top</a></p>
+      </body>
+    </html> <!-- Close html --!>
